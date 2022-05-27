@@ -15,6 +15,12 @@ const projectsData = [
     imgSrc: '/static/images/time-machine.jpg',
     href: '/blog/the-time-machine',
   },
+  {
+    title: 'My Personal Portfolio',
+    description: `My personal portfolio made with React, Gatsby.js, and SASS.`,
+    imgSrc: '/static/images/google.png',
+    href: 'https://www.edmondma.dev',
+  },
 ]
 
 export default projectsData

@@ -1,12 +1,12 @@
 ---
-name: Tails Azimuth
+name: Edmond Ma
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+occupation: Front-End Developer & Software Engineer
+company: Freelance
+email: edjunma@gmail.com
+twitter: https://twitter.com/edjunma
+linkedin: https://www.linkedin.com/in/edjunma
+github: https://github.com/edjunma
 ---
 
 Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
