@@ -19,14 +19,22 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
+        <div className="space-y-2 pt-6 pb-4 md:space-y-5">
+          <h1 className="mt-16 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            Hi 👋, I’m Edmond Ma
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+          <h2 className="prose text-lg text-gray-600 dark:text-gray-400">
+            {`Welcome to my blog - ${siteMetadata.description}. I am a front-end developer by profession and software engineer by training. On my free time, I like to design & develop `}
+            <Link href="/projects">side projects</Link>
+            {' and '}
+            <Link href="/blog">blog</Link>
+            {' about them. Enjoy your time here and have a good read!'}
+          </h2>
+          <h2 className="flex pt-16 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
+            Latest
+          </h2>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
