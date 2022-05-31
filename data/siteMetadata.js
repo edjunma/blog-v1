@@ -14,8 +14,6 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com/in/edjunma',
   github: 'https://github.com/edjunma',
   twitter: 'https://twitter.com/edjunma',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
