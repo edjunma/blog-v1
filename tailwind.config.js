@@ -29,7 +29,9 @@ module.exports = {
       },
       colors: {
         primary: colors.teal,
+        // teal, emerald, orange looks nice
         gray: colors.neutral,
+        // zinc is also good color for dark mode
       },
       typography: (theme) => ({
         DEFAULT: {
