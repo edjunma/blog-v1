@@ -1,0 +1,34 @@
+---
+title: Solving Two Sum
+date: '2022-06-02'
+tags: ['leetcode', 'two-sum', 'data structures', 'algorithms', 'study']
+draft: false
+authors: ['default']
+summary: Two Sum is one of the most popular questions if not one of the classic interview questions thrown at you when learning data structures and algorithms. Come learn with me as I try to explain how I solve and understand the question in both JavaScript and Python.
+---
+
+# Two Sum
+
+As a self-taught developer, the Two Sum question didn't exactly come easy to me on my learning journey, you can say to this day, I still don't understand the question. But I hope by beginning to write and wrack my brain and throw my thoughts on a blog post with a more methodical approach to break down each question would help me better understand data structures and algorithms.
+
+Lately I have been using neetcode.io and following the Grind 75 questions. To better understand the Leetcode classic, I know I have to take a deep dive into the fundamentals of the question such as arrays, hash maps, time-complexity and space-complexity.
+
+## Problem Description
+
+![ocean](/static/images/two-sum-question.jpg)
+
+Here is the question snipped from LeetCode, now let's take a look at the different fundamental solutions of the problem in both JavaScript and Python!
+
+## JavaScript
+
+## Python 🐍
+
+```python
+  def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i,j]
+```
+
+Here is my first approach, a nested for loop where we look through the array for the first pair of indices of the two numbers that add up to the target value.

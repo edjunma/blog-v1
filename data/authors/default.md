@@ -2,7 +2,7 @@
 name: Edmond Ma
 avatar: /static/images/avatar.png
 occupation: Front-End Developer & Software Engineer
-company: Upwork
+company: EJM
 email: edjunma@gmail.com
 twitter: https://twitter.com/edjunma
 linkedin: https://www.linkedin.com/in/edjunma
