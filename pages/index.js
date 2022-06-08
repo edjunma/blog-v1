@@ -33,7 +33,7 @@ export default function Home({ posts }) {
             {' about them. Enjoy your time here and have a good read!'}
           </h2>
           <h2 className="flex pt-16 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
-            Latest
+            Latest Posts
           </h2>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
