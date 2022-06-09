@@ -1,4 +1,5 @@
 import Link from '@/components/Link'
+import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -19,23 +20,37 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-4 md:space-y-5">
-          <h1 className="mt-16 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Hi 👋, I’m Edmond Ma
-          </h1>
-          <h2 className="prose text-lg text-gray-600 dark:text-gray-400">
-            {`Welcome to my blog - ${siteMetadata.description}. I am a front-end developer by profession and software engineer by training. On my free time, I like to design & develop `}
-            <Link href="/projects">side projects</Link>
-            {' and '}
-            <Link href="/blog">blog</Link>
-            {' about them. Enjoy your time here and have a good read!'}
-          </h2>
-          <h2 className="flex pt-16 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
-            Latest Posts
-          </h2>
+      <div>
+        <div className="my-6 flex flex-col items-center gap-x-12 xl:mb-12 xl:flex-row">
+          <div className="pt-6">
+            <h1 className="mt-16 pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+              Hi 👋, I’m Edmond Ma
+            </h1>
+            <h2 className="prose text-lg text-gray-600 dark:text-gray-400">
+              {`Welcome to my blog - ${siteMetadata.description}. I am a front-end developer by profession and software engineer by training. During my free time, I like to design & develop `}
+              <Link href="/projects">side projects</Link>
+              {' and '}
+              <Link href="/blog">blog</Link>
+              {' about my musings. Enjoy your stay here and have a good read!'}
+            </h2>
+          </div>
+          {/* Profile Image */}
+          <div className="mt-16 flex items-center justify-center">
+            <Image
+              src={'/../public/static/images/avatar.png'}
+              alt="avatar"
+              width="192px"
+              height="192px"
+              className="h-48 w-48 rounded-full"
+            />
+          </div>
         </div>
+
+        {/* Latest Posts */}
+        <h2 className="flex pt-16 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
+          Latest Posts
+        </h2>
+        <hr className="border-gray-200 dark:border-gray-700" />
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {

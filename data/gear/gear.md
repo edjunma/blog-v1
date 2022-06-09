@@ -9,7 +9,7 @@ linkedin: https://www.linkedin.com/in/edjunma
 github: https://github.com/edjunma
 ---
 
-Having the right hardware and software is directly associated with increased productivity. Here is a list of all the gear that I utilize on a daily basis. If the product is listed here I would most likely recommend it to you if you asked me. Some of the links below may be affiliate links.
+Having the right hardware and software is directly associated with increased productivity. Here is a list of all the gear that I utilize on a daily basis. If the product is listed here I would most likely recommend it to you if you asked me. Some of the links below are affiliate links.
 
 # Hardware
 
