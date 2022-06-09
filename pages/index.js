@@ -6,6 +6,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
+import avatar from '../public/static/images/avatar.png'
 import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 5
@@ -37,7 +38,7 @@ export default function Home({ posts }) {
           {/* Profile Image */}
           <div className="mt-16 flex items-center justify-center">
             <Image
-              src="/../public/static/images/avatar.png"
+              src={avatar}
               alt="avatar"
               width="192px"
               height="192px"
