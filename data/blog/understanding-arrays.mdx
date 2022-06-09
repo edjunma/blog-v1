@@ -11,17 +11,89 @@ summary: In my progress to master the fundamentals of programming and improving 
 
 After encountering Tech Interview Handbook, I decided to write blog posts about the topics that I am studying and improving on. One of the basics of succeeding in coding interviews is understanding arrays and writing about what I've learned would certainly be beneficial to not only me but to the community.
 
-Arrays are data structures that hold values of the same type at contiguous memory locations. In an array, we usually look for two things, the position or the index of an element and then the element itself.
+Arrays are data structures that hold values of the same type at contiguous memory locations. Otherwise an array is a collection of data that can be accessed by indexing. In an array, we usually look for two things, the position or the index of an element and then the element itself.
 
 ## Basic Structure of Arrays 🔎
 
 For me, how I understood arrays was to visualize the data being stored in their elements. For example, visualizing your computer's memory as a grid where each piece of information on your computer is stored in countless other small squares. Arrays utilize the "grid" structure to store lists of related information in adjacent memory locations for maximum efficiency during value lookups.
 
-WIP.....
+## Creating an Array
+
+Creating an array is as simple as declaring a variable and assigning it a value. Below is how we simply initialize the array in JavaScript.
+
+#### JavaScript
+
+```javascript
+let myArray = []
+```
+
+## Declaring the Size of the Array
+
+Now that you have initialized the array, we can declare the size of the array.
+
+#### JavaScript
+
+```javascript
+myArray = new Array(5)
+```
+
+## Adding Data to the Array
+
+Now that we have an array with it's size declared, we can add data into the array. There are multiple ways to add data in arrays, the most common ways is to add the data all at once or adding the data via an index.
+
+#### JavaScript
+
+```javascript
+myArray[0] = 1
+myArray[1] = 2
+myArray[2] = 3
+myArray[3] = 4
+myArray[4] = 5
+```
+
+## All 3 Steps Combined
+
+Initializing an array, declaring the size, and adding data in 3 separate steps of code is tedious. You can do it all at once in one line!
+
+#### JavaScript
+
+```javascript
+let myArray = [10, 3, 5, 7, 9] // don't need to declare data types in JavaScript
+```
+
+## Accessing Data in the Array
+
+Now that the array is made, we can access the data in the array the same way we added it.
+
+#### JavaScript
+
+```javascript
+console.log(myArray[0])
+```
+
+## Looping through the Array
+
+Unfortunately, we cannot access all the data in the array by simply printing out: `System.out.println(myArray[i])`. We need to instead loop over the whole array and print out each element.
+
+#### JavaScript
+
+```javascript
+for (let i = 0; i < myArray.length; i++) {
+  console.log(myArray[i])
+}
+```
 
 ## Advantages 👍
 
+- Store multiple elements of the same type with a single variable name
+
+- Accessing elements is fast as long as you have the index of the array, as opposed to linked lists where you have to traverse from the head.
+
 ## Disadvantages 👎
+
+- Adding and removing elements into/from the middle of the array is slow because the remaining elements within the array have to be shifted/moved to accommodate for the new/missing element. An exception to this is if the position of the element is to be inserted/removed at the end of the array.
+
+- For certain languages where the size of the array is fixed, you cannot alter the size after it is initialized. If an insertion method causes the total number of elements to exceed the size, a new array has to be allocated and then the existing elements have to be copied over. The act of creating a new array and transferring elements over takes O(n) time.
 
 ## Inspiration ✨
 
