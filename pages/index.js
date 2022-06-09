@@ -37,7 +37,7 @@ export default function Home({ posts }) {
           {/* Profile Image */}
           <div className="mt-16 flex items-center justify-center">
             <Image
-              src={'/../public/static/images/avatar.png'}
+              src="/../public/static/images/avatar.png"
               alt="avatar"
               width="192px"
               height="192px"
