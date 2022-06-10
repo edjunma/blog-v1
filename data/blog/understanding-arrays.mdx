@@ -83,6 +83,31 @@ for (let i = 0; i < myArray.length; i++) {
 }
 ```
 
+## Multi-Dimensional Arrays - Matrix
+
+You can also create and access data within a multi dimensional array. This is useful for creating a matrix or a grid.
+
+```javascript
+let myMatrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+] // Initialize a 3x3 matrix and adds data into one line
+console.log(myMatrix[0][0]) // Prints out the first element in the first row
+```
+
+## Accessing All Data
+
+To access all the data in a multi dimensional array or matrix, we need to use a nested loop.
+
+```javascript
+for (let i = 0; i < myMatrix.length; i++) {
+  for (let j = 0; j < myMatrix[i].length; j++) {
+    console.log(myMatrix[i][j])
+  }
+}
+```
+
 ## Advantages 👍
 
 - Store multiple elements of the same type with a single variable name
@@ -94,6 +119,10 @@ for (let i = 0; i < myArray.length; i++) {
 - Adding and removing elements into/from the middle of the array is slow because the remaining elements within the array have to be shifted/moved to accommodate for the new/missing element. An exception to this is if the position of the element is to be inserted/removed at the end of the array.
 
 - For certain languages where the size of the array is fixed, you cannot alter the size after it is initialized. If an insertion method causes the total number of elements to exceed the size, a new array has to be allocated and then the existing elements have to be copied over. The act of creating a new array and transferring elements over takes O(n) time.
+
+## Conclusion
+
+And... that's a wrap! We covered most of the foundations of arrays, to recap, we learned how to initialize arrays, declare the size of the array, add data to the array, and how to access data within an array by indexing and looping over the array.
 
 ## Inspiration ✨
 
