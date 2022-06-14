@@ -120,7 +120,21 @@ for (let i = 0; i < myMatrix.length; i++) {
 
 - For certain languages where the size of the array is fixed, you cannot alter the size after it is initialized. If an insertion method causes the total number of elements to exceed the size, a new array has to be allocated and then the existing elements have to be copied over. The act of creating a new array and transferring elements over takes O(n) time.
 
-## Conclusion
+## Summary
+
+- Arrays are powerful data structures that store elements of the same type. When you create the array, the type of elements and the size of the array are fixed and defined when you create it. Which in turn allocates the memory immediately after you initialize the array and assign it values otherwise the array starts off empty.
+
+- The elements of the array are located in contiguous locations in memory, using indices the array can be accessed efficiently in O(1) constant time.
+
+- Indices of the array start at 0 and not at 1.
+
+- Inserting elements at the beginning or in the middle of the array requires moving elements to the right of the array. If the array is full, it isn't optimal to create a new & larger array therefore inserting at the end of the array is very efficient in constant time O(1).
+
+- Removing elements from the beginning or from the middle of the array requires moving all of the elements in the array to the left. This guarantees that the elements in the array are stored in contiguous spaces in memory and avoids leaving an empty space in the memory. Removing at the end of the array also consists of O(1) constant time because you only need to delete the last element.
+
+- To find an element in the array, you need to scan through the entire array until you find the specific element. If the data in the array is sorted, algorithms such as Binary Search is optimal in breaking down the array until you find the element.
+
+## Conclusion 🏁
 
 And... that's a wrap! We covered most of the foundations of arrays, to recap, we learned how to initialize arrays, declare the size of the array, add data to the array, and how to access data within an array by indexing and looping over the array.
 
