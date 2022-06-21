@@ -25,6 +25,8 @@ Having the right hardware and software is directly associated with increased pro
 
 **Audio:** [Logitech GPRO X Headset](https://amzn.to/3xze7TZ) or [Apple AirPods Pro](https://amzn.to/3mww8fp)
 
+**Chair:** [Secretlab Titan Softweave Chair](https://secretlab.co)
+
 # Software
 
 **IDE:** [Visual Studio Code](https://code.visualstudio.com/)
